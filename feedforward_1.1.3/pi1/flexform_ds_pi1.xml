@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<sheets>
+		<!-- Sheet General: General settings for the plugin -->
+ 		<sGeneral>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:feedforward/pi1/locallang.xml:general_tab</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!-- Text with replacement markers -->
+					<feedurl>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:feedurls</label>
+							<config>
+								<type>text</type>
+								<size>1000</size>
+								<eval>tx_feedforward_urleval1, required</eval>
+							</config>
+						</TCEforms>
+					</feedurl>
+					<maxitems>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:maxitems</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<eval>num</eval>
+								<default></default>
+							</config>
+						</TCEforms>
+					</maxitems>
+					<itemlength>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:itemlength</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<default></default>
+							</config>
+						</TCEforms>
+					</itemlength>
+					<length_unit>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:length_unit</label>
+							<config>
+								<type>radio</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:unit_words</numIndex>
+									<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:unit_chars</numIndex>
+									<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</length_unit>
+					<sorting_pref>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:sorting_pref</label>
+							<config>
+								<type>radio</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:pref_ascending</numIndex>
+									<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:pref_descending</numIndex>
+									<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</sorting_pref>
+					<parsepref>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:parsepref</label>
+							<config>
+								<type>radio</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:parsedesc</numIndex>
+									<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:parsece</numIndex>
+									<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</parsepref>
+					<cache_time>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:cache_time</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<default>1800</default>
+							</config>
+						</TCEforms>
+					</cache_time>
+					<cache_dir>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:cache_dir</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<default></default>
+							</config>
+						</TCEforms>
+					</cache_dir>
+  				</el>
+			</ROOT>
+ 		</sGeneral>
+		<!-- Sheet General: End -->
+		<!-- Sheet Publishing: Publishing settings for the plugin -->
+ 		<sPublishing>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:feedforward/pi1/locallang.xml:publishing_tab</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<link_title>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:link_title</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</link_title>
+					<titledate>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:titledate</label>
+							<config>
+								<type>radio</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:nodate</numIndex>
+									<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:dateafter</numIndex>
+									<numIndex index="1">1</numIndex>
+									</numIndex>
+
+									<numIndex index="2" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:datebefore</numIndex>
+									<numIndex index="1">2</numIndex>
+									</numIndex>
+								</items>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</titledate>
+					<date_format>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:date_format</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<default>D, j M Y</default>
+							</config>
+						</TCEforms>
+					</date_format>
+					<show_subtitle>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:show_subtitle</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</show_subtitle>
+					<suppress_date_subtitle>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:suppress_date_subtitle</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</suppress_date_subtitle>
+					<suppress_author_subtitle>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:suppress_author_subtitle</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</suppress_author_subtitle>
+					<suppress_site_subtitle>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:suppress_site_subtitle</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</suppress_site_subtitle>
+					<show_content>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:show_content</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</show_content>
+					<show_readmore>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:show_readmore</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</show_readmore>
+					<published_text>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:published_text</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<default>published</default>
+							</config>
+						</TCEforms>
+					</published_text>
+					<on_text>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:on_text</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<default>on</default>
+							</config>
+						</TCEforms>
+					</on_text>
+					<by_text>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:by_text</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<default>by</default>
+							</config>
+						</TCEforms>
+					</by_text>
+					<at_text>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:at_text</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<default>at</default>
+							</config>
+						</TCEforms>
+					</at_text>					
+					<readmore_text>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:readmore_text</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<default>read more></default>
+							</config>
+						</TCEforms>
+					</readmore_text>
+				</el>
+			</ROOT>
+ 		</sPublishing>
+		<!-- Sheet Publishing: End -->
+		<!-- Sheet Style: Style settings for the plugin -->
+ 		<sStyle>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:feedforward/pi1/locallang.xml:style_tab</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!-- Text with replacement markers -->
+					<css_header>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:header_style</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<default>h1</default>
+							</config>
+						</TCEforms>
+					</css_header>
+					<css_subtitle>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:subtitle_style</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<default>h2</default>
+							</config>
+						</TCEforms>
+					</css_subtitle>
+					<css_body>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:body_style</label>
+							<config>
+								<type>input</type>
+								<default>p .bodytext</default>
+								<size>50</size>
+							</config>
+						</TCEforms>
+					</css_body>
+					<css_readmore>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:readmore_style</label>
+							<config>
+								<type>input</type>
+								<default></default>
+								<size>50</size>
+							</config>
+						</TCEforms>
+					</css_readmore>
+					<bg_uneven>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:bg_uneven</label>
+							<config>
+								<type>input</type>
+								<size>22</size>
+								<wizards>
+									<colorpick>
+										<type>colorbox</type>
+										<title>LLL:EXT:feedforward/pi1/locallang.xml:bg_uneven_click</title>
+										<script>wizard_colorpicker.php</script>
+										<dim>10x10</dim>
+										<tableStyle>border: solid 1px black; margin-left: 5px;</tableStyle>
+										<JSopenParams>height=300,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</colorpick>
+								</wizards>
+							</config>
+						</TCEforms>
+					</bg_uneven>
+					<fg_uneven>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:fg_uneven</label>
+							<config>
+								<type>input</type>
+								<size>22</size>
+								<wizards>
+									<colorpick>
+										<type>colorbox</type>
+										<title>LLL:EXT:feedforward/pi1/locallang.xml:fg_uneven_click</title>
+										<script>wizard_colorpicker.php</script>
+										<dim>10x10</dim>
+										<tableStyle>border: solid 1px black; margin-left: 5px;</tableStyle>
+										<JSopenParams>height=300,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</colorpick>
+								</wizards>
+							</config>
+						</TCEforms>
+					</fg_uneven>
+					<bg_even>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:bg_even</label>
+							<config>
+								<type>input</type>
+								<size>22</size>
+								<wizards>
+									<colorpick>
+										<type>colorbox</type>
+										<title>LLL:EXT:feedforward/pi1/locallang.xml:bg_even_click</title>
+										<script>wizard_colorpicker.php</script>
+										<dim>10x10</dim>
+										<tableStyle>border: solid 1px black; margin-left: 5px;</tableStyle>
+										<JSopenParams>height=300,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</colorpick>
+								</wizards>
+							</config>
+						</TCEforms>
+					</bg_even>
+					<fg_even>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:fg_even</label>
+							<config>
+								<type>input</type>
+								<size>22</size>
+								<wizards>
+									<colorpick>
+										<type>colorbox</type>
+										<title>LLL:EXT:feedforward/pi1/locallang.xml:fg_even_click</title>
+										<script>wizard_colorpicker.php</script>
+										<dim>10x10</dim>
+										<tableStyle>border: solid 1px black; margin-left: 5px;</tableStyle>
+										<JSopenParams>height=300,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</colorpick>
+								</wizards>
+							</config>
+						</TCEforms>
+					</fg_even>
+				</el>
+			</ROOT>
+ 		</sStyle>
+		<!-- Sheet Style: End -->
+		<!-- Sheet Media: Media settings for the plugin -->
+ 		<sMedia>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:feedforward/pi1/locallang.xml:media_tab</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<prefer_media>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:prefer_media</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</prefer_media>
+					<preferred_size>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:preferred_size</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default></default>
+							</config>
+						</TCEforms>
+					</preferred_size>
+					<preftoosmall>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:preftoosmall</label>
+							<config>
+								<type>radio</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:usepreferred</numIndex>
+									<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:useactual</numIndex>
+									<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</preftoosmall>
+					<preftoobig>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:preftoobig</label>
+							<config>
+								<type>radio</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:usepreferred_norec</numIndex>
+									<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:useactual</numIndex>
+									<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</preftoobig>
+
+					<mediainfo1>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:mediainfo1</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_title</numIndex>
+									<numIndex index="1">Title</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_description</numIndex>
+									<numIndex index="1">Description</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_credit</numIndex>
+									<numIndex index="1">Credit</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_blank</numIndex>
+									<numIndex index="1"></numIndex>
+									</numIndex>
+								</items>
+								<default>Title</default>
+							</config>
+						</TCEforms>
+					</mediainfo1>
+					<mediainfo2>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:mediainfo2</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_title</numIndex>
+									<numIndex index="1">Title</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_description</numIndex>
+									<numIndex index="1">Description</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_credit</numIndex>
+									<numIndex index="1">Credit</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_blank</numIndex>
+									<numIndex index="1"></numIndex>
+									</numIndex>
+								</items>
+								<default>Description</default>
+							</config>
+						</TCEforms>
+					</mediainfo2>
+					<mediainfo3>
+						<TCEforms>
+							<label>LLL:EXT:feedforward/pi1/locallang.xml:mediainfo3</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_title</numIndex>
+									<numIndex index="1">Title</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_description</numIndex>
+									<numIndex index="1">Description</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_credit</numIndex>
+									<numIndex index="1">Credit</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+									<numIndex index="0">LLL:EXT:feedforward/pi1/locallang.xml:media_blank</numIndex>
+									<numIndex index="1"></numIndex>
+									</numIndex>
+								</items>
+								<default>Credit</default>
+							</config>
+						</TCEforms>
+					</mediainfo3>
+					
+				</el>
+			</ROOT>
+ 		</sMedia>
+		<!-- Sheet Media: End -->
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,32 @@
+08-07-11 Emiel de Grijs  <emiel@silverfactory.net>
+
+	* More configuration options for title, subtitle and "read more" appearance
+
+08-07-04 Emiel de Grijs  <emiel@silverfactory.net>
+
+	* Autodetected character set conversion
+
+08-03-10 Emiel de Grijs  <emiel@silverfactory.net>
+
+	* Bugfix for "published at" header value that sometimes appeared as "_http" (1.1.0)
+	
+08-02-24 Emiel de Grijs  <emiel@silverfactory.net>
+
+	* Restrict number of items and item length. Specify preferred usage of description or content:encoded (1.0.9)
+
+08-02-23 Emiel de Grijs  <emiel@silverfactory.net>
+
+	* Hotfix; plugin wouldn't work after cache was cleared (1.0.8)
+
+08-02-12 Emiel de Grijs  <emiel@silverfactory.net>
+
+	* PHP4 fix, color override for even/uneven rows, choice which elements to display (1.0.7)
+	
+08-01-29 Emiel de Grijs  <emiel@silverfactory.net>
+
+	* Parser optimization (1.0.5)
+
+08-01-27 Emiel de Grijs  <emiel@silverfactory.net>
+
+	* Initial release (1.0.0)
+	

@@ -1,0 +1,3 @@
+plugin.tx_feedforward_pi1 {
+     templateFile = media/scripts/feedforward_template.tmpl
+}
